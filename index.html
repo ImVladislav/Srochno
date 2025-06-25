@@ -49,12 +49,17 @@
       document.documentElement.className = "js";
     </script>
 
-    <title>NFA Token | ETH</title>
+     <title>NFA Token | ETH</title>
     <style id="et-divi-userfonts">
       @font-face {
         font-family: "Tequila";
         font-display: swap;
         src: url("fonts/TEQUILA_.ttf") format("truetype");
+      }
+      
+      /* Apply Tequila font everywhere except header */
+      *:not(header):not(header *):not(#main-header):not(#main-header *) {
+        font-family: "Tequila", Helvetica, Arial, Lucida, sans-serif !important;
       }
     </style>
     <meta name="robots" content="max-image-preview:large" />
@@ -370,6 +375,7 @@
         --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
       }
       body {
+      font-family: "Tequila", Helvetica, Arial, Lucida, sans-serif !important;
         margin: 0;
         --wp--style--global--content-size: 823px;
         --wp--style--global--wide-size: 1080px;
@@ -453,6 +459,9 @@
         padding-bottom: 0px;
         padding-left: 0px;
       }
+      body p{ font: 1.2em sans-serif;
+          font-weight: 800;
+        color: black;}
       a:where(:not(.wp-element-button)) {
         text-decoration: underline;
       }
@@ -898,7 +907,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
         font-size: 30px;
       }
       h2 {
-        font-size: 26px;
+        font-size: 32px;
+        font-weight: 800;
       }
       h3 {
         font-size: 22px;
